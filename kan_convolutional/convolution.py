@@ -11,7 +11,7 @@ def calc_out_dims(matrix, kernel_side, stride, dilation, padding):
     b = [kernel_side // 2]
     return h_out,w_out,batch_size,n_channels
 
-def multiple_convs_kan_conv2d(matrix, #but as torch tensors. Kernel side asume q el kernel es cuadrado
+def multiple_convs_kan_conv1d(matrix, #but as torch tensors. Kernel side asume q el kernel es cuadrado
              kernels, 
              kernel_side,
              out_channels,
